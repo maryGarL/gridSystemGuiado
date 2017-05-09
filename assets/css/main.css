@@ -1,0 +1,43 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+  .row{
+    border: solid 1px black;
+  }
+.row:before, .row:after{
+  content: "";
+  display: table;
+}
+.row:after{
+  clear: both;
+}
+[class*="col-"]{
+  min-height: 7px;
+  padding: 12px;
+  float:left;
+
+
+  }
+  .col-4{
+    width: 33.33%;
+    height: 369px
+  }
+  .col-12{
+    width: 100%;
+    height: 369px
+  }
+.parrafo{
+  background-color: dimgrey;
+  height: 100%;
+  width: 100%;
+}
+.alto{
+  height: 700px !important;
+}
